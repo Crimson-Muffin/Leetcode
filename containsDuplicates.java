@@ -1,7 +1,7 @@
 // This is the Solution to the Question 217 in Leetcode
 import java.util.HashSet;
 
-class containsDuplicate{
+class containsDuplicates{
     public boolean containsDuplicate(int[] nums) {
         HashSet<Integer> numbers = new HashSet<Integer>();
         for(int i=0;i<nums.length;i++){

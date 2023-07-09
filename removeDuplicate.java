@@ -12,3 +12,6 @@ class removeDuplicate{
         return j;
     }
 }
+
+// Time complexity: O(n)
+// Space complexity: O(1)
