@@ -24,7 +24,6 @@ class Main {
 		int arr_size = arr.length;
 		Pair minmax = getMinMax(arr, arr_size);
 		System.out.println("Minimum element is " + minmax.min);
-		System.out.println("Maximum element is " + minmax.max);
-        
+		System.out.println("Maximum element is " + minmax.max);   
 	}
 }
