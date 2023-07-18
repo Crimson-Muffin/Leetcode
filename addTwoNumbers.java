@@ -33,7 +33,7 @@ public class addTwoNumbers {
         if(carry>0){
             tail.next = new ListNode(carry);
         }
-
+        // Return the next node of the dummy head node
         return dummyhead.next;
     }
 }
