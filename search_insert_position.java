@@ -20,6 +20,9 @@ public class search_insert_position {
                 return mid;
             }
         }
+        // returning start as the element to insert 
+        // because that is the place where the element should be if
+        // it isn't present in the array
         return start;
     }
 }
