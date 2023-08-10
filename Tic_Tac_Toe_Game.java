@@ -14,7 +14,12 @@ public class Tic_Tac_Toe_Game {
         char[][] grid = new char[3][3];
 
         for(int i=0; i<A.length; i++){
-            A[i][0]
+            if(i%2 == 0){
+                grid[A[i][0]][A[i][1]] = 'X';
+            }
+            else{
+                grid[A[i][0]][A[i][1]] = 'O';
+            }
         }
     }
 }
