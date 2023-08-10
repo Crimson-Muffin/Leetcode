@@ -3,7 +3,7 @@ return the index if the target is found. If not,
 return the index where it would be if it were inserted in order.
 You must write an algorithm with O(log n) runtime complexity. */
 
-public class search_insert_position {
+public class search_insert_position35 {
     public int searchInsertPosition(int[] nums, int target){
         // Using binary search to find the element
         int start = 0;
