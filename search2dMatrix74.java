@@ -3,6 +3,7 @@ public class search2dMatrix74 {
         int row = matrix.length;
         int col = matrix[0].length;
         
+        // Almost Binary search
         for(int i = 0; i<row; i++){
             int l = matrix[i][0];
             int r = matrix[i][col-1];
@@ -15,6 +16,7 @@ public class search2dMatrix74 {
         return false;
     }
     public boolean searchMatrix1(int[][] matrix,int target){
+        // Linear search line by line
         int row = matrix.length;
         int col = matrix[0].length;
         for(int i = 0; i<row; i++){
