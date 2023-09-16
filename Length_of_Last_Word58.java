@@ -11,4 +11,18 @@ class Length_of_Last_Word58{
         // so we need to subtract 1 to get the correct length
         return s.length()-s.lastIndexOf(" ")-1;
     }
+    public int lastwordlength(String s){
+        int length = 0;
+        for(int i = s.length()-1; i>=0; i--){
+            if(s.charAt(i)!=' '){
+                length++;
+            }
+            else{
+                if(length > 0){
+                    return length;
+                }
+            }
+            return length;
+        }
+    }
 }
