@@ -8,7 +8,7 @@ public class ispowerofthree326 {
         }
         return n == 1;
     }
-    public boolean isPowerOfThree(int n){
+    public boolean isPowerOfThree1(int n){
         // Recursive approach
         if(n==1){
             return true;
