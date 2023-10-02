@@ -11,7 +11,7 @@ class FindtheDifference389{
         }
         return (char)(sum2-sum1);
     }
-    public char findTheDifference(String s, String t) {
+    public char findTheDifference1(String s, String t) {
         char c = 0;
         for(char cs : s.toCharArray()) c ^= cs;
         for(char ct : t.toCharArray()) c ^= ct;
