@@ -1,3 +1,5 @@
+import java.util.HashSet;
+
 class FindtheDuplicateNumber287{
     // Hashset approach
     public int findDuplicate(int[] nums) {
