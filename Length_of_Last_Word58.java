@@ -22,7 +22,7 @@ class Length_of_Last_Word58{
                     return length;
                 }
             }
-            return length;
         }
+        return length;
     }
 }
