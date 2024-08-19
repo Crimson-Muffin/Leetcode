@@ -16,7 +16,7 @@ public class PathwithMaximumGold1219 {
         }
         int temp = grid[i][j];
         grid[i][j] = 0;
-        int left = dfs(grid, i, j - 1);2331. Evaluate Boolean Binary Tree
+        int left = dfs(grid, i, j - 1);
         int right = dfs(grid, i, j + 1);
         int up = dfs(grid, i - 1, j);
         int down = dfs(grid, i + 1, j);

@@ -2,11 +2,13 @@ class ListNode {
     int data;
     ListNode next;
 
+    ListNode() {
+    }
+
     ListNode(int data) {
         this.data = data;
         this.next = null;
     }
-
 }
 
 public class LinkedListSort0s1s2s {
