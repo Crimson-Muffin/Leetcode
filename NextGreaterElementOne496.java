@@ -3,16 +3,21 @@ import java.util.Map;
 import java.util.Stack;
 
 public class NextGreaterElementOne496 {
-    public int[] nextGreaterElement(int[] findNums, int[] nums) {
-        Map<Integer, Integer> map = new HashMap<>(); // map from x to next greater element of x
-        Stack<Integer> stack = new Stack<>();
-        for (int num : nums) {
-            while (!stack.isEmpty() && stack.peek() < num)
-                map.put(stack.pop(), num);
-            stack.push(num);
+    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        Stack<Integer> st = new Stack<>();
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < nums2.length; i++) {
+            while (!st.isEmpty() && st.peek() < nums2[i]) {
+                map.put(st.pop(), nums2[i]);
+            }
+            st.push(nums2[i]);
         }
-        for (int i = 0; i < findNums.length; i++)
-            findNums[i] = map.getOrDefault(findNums[i], -1);
-        return findNums;
+
+        for (int i = 0; i < nums1.length; i++) {
+            nums1[i] = map.getOrDefault(nums1[i], -1);
+        }
+
+        return nums1;
     }
 }

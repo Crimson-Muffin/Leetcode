@@ -24,32 +24,7 @@ public class RotateString796 {
     public static void main(String[] args) {
         String s = "abcde";
         String goal = "cdeab";
-        // char[] arr = new char[2 * s.length()];
-        // for (int i = 0; i < s.length(); i++) {
-        // arr[i] = s.charAt(i);
-        // }
-        // for (int i = 0; i < s.length(); i++) {
-        // System.out.print(arr[i] + " ");
-        // }
-        // for (int i = 0; i <s.length();i++){
-        // arr[s.length()+i] = arr[i];
-        // String temp = new String();
-        // }
-        // StringBuilder sb = new StringBuilder(s);
-        // // System.out.println(sb.toString());
-        // for (int i = 0; i < s.length(); i++) {
-        // System.out.println("Before -> " + sb.toString());
-        // sb.deleteCharAt(0);
-        // sb.append(s.charAt(i));
-        // System.out.println("After -> " + sb.toString());
-        // // System.out.println(sb.toString());
-        // if (sb.toString().equals(goal)) {
-        // System.out.println("Yes");
-        // }
-        // }
-        // System.out.println("No");
 
-        // s.concat(s)
         System.out.println(rotateString1(s, goal));
     }
 }

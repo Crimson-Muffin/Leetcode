@@ -19,7 +19,6 @@ public class RelativeSortArray1122 {
         System.out.println(map);
         int[] res = new int[arr1.length];
         int j = 0;
-        int sum = 0;
         for (int i : arr2) {
             while (map.getOrDefault(i, 0) > 0) {
                 map.put(i, map.getOrDefault(i, 1) - 1);

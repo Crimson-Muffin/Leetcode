@@ -8,7 +8,7 @@ class RemoveLinkedListElements203 {
         dummy.next = head;
         ListNode curr = dummy;
         while (curr.next != null) {
-            if (curr.next.data == val) {
+            if (curr.next.val == val) {
                 curr.next = curr.next.next;
             } else {
                 curr = curr.next;
@@ -28,7 +28,7 @@ class RemoveLinkedListElements203 {
         ListNode cur = head;
 
         while (cur != null) {
-            if (cur.data == val) {
+            if (cur.val == val) {
                 prev.next = cur.next;
             } else {
                 prev = cur;
@@ -44,7 +44,7 @@ class RemoveLinkedListElements203 {
             return null;
         }
         ListNode rightSideHead = removeElements(head.next, val);
-        if (head.data == val) {
+        if (head.val == val) {
             return rightSideHead;
         }
         head.next = rightSideHead;

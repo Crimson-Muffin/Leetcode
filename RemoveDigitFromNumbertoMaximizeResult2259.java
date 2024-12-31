@@ -27,7 +27,16 @@ public class RemoveDigitFromNumbertoMaximizeResult2259 {
 
     // Optimized Method
     public String removeDigit1(String number, char digit) {
-
+        int n = number.length(), index = 0;
+        for (int i = 0; i < n; i++) {
+            if (number.charAt(i) == digit) {
+                index = i;
+                if (i < n - 1 && number.charAt(i + 1) > digit) {
+                    break;
+                }
+            }
+        }
+        return number.substring(0, index) + number.substring(index + 1);
     }
 
 }

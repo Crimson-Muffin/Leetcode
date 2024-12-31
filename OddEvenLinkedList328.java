@@ -1,6 +1,6 @@
 public class OddEvenLinkedList328 {
     public ListNode oddevenList(ListNode head) {
-        if (head == null) {
+        if (head == null || head.next == null) {
             return head;
         }
         ListNode odd = head, even = head.next, evenhead = head.next;
